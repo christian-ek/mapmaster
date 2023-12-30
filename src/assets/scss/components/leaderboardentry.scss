@@ -1,0 +1,39 @@
+.congratulatory-message {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.leaderboard-entry-overlay input {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: $dark-gray;
+  background-color: $white;
+  border: 1px solid $purple-light;
+  border-radius: 12px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+
+  &::placeholder {
+    color: $dark-gray;
+  }
+
+  &:hover {
+    border-color: $purple-light;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $purple-light;
+    box-shadow: 0 0 0 1px $purple-light;
+  }
+
+  &:disabled {
+    background-color: $light-gray;
+    color: $dark-gray;
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,60 @@
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  margin-top: 10px;
+}
+
+.leaderboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+.leaderboard li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.leaderboard li .score {
+  flex: 1;
+}
+
+.leaderboard-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 5px;
+  text-align: center;
+}
+
+.highlighted-player {
+  font-weight: bold;
+}
+
+.score {
+  min-width: 50px;
+  text-align: right;
+}
+
+.rank-emoji {
+  min-width: 40px;
+  text-align: center;
+}
+
+.no-scores-message {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}

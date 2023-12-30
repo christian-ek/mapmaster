@@ -1,0 +1,126 @@
+.button {
+  appearance: button;
+  background-color: $purple-dark;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .2px;
+  line-height: 20px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+  margin-top: 1rem; 
+  pointer-events: auto;
+  position: relative;
+  font-family: Montserrat, Lato;
+
+  &:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+
+  &:focus {
+    user-select: auto;
+  }
+
+  &:active {
+    border-width: 4px 0 0;
+    background: none;
+  }
+
+  &:disabled {
+    cursor: auto;
+  }
+
+  &.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:after {
+    background-clip: padding-box;
+    background-color: $purple-medium;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+  }
+}
+
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid $white;
+  width: 14px;
+  height: 14px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.two-button-layout {
+  width: 50%;
+}
+
+.one-button-layout {
+  width: 70%;
+}
+
+.clues-button {
+  position: fixed;
+  bottom: 30px;
+  left: 20px;
+  width: 140px;
+}
+
+.submit-button {
+  width: 120px;
+}
+
+@media (max-width: 768px) {
+  .clues-button {
+    bottom: 15px;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  padding: 0px;
+  line-height: 1;
+  color: $dark-gray;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,15 @@
+
+@font-palette-values --Mint {
+  font-family: RocherColor;
+  base-palette: 7;
+}
+
+@font-face {
+  font-family: 'RocherColor';
+  src: url('@/assets/fonts/RocherColorGX.woff2') format('woff2'),
+       url('@/assets/fonts/RocherColorGX.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&display=swap');

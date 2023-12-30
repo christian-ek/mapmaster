@@ -1,0 +1,98 @@
+.overlay {
+  position: fixed;
+  background-color: $overlay-background;
+  padding: 5px 10px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  border: $border;
+  z-index: $overlay-z-index;
+  pointer-events: auto;
+}
+
+.flag-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 3em;
+  padding: 0 20px;
+  width: auto;
+  min-width: 150px;
+  height: 130px;
+}
+
+.info-overlay, .game-mode-selection {
+  padding: 20px;
+  max-width: 500px;
+}
+
+.clues-overlay {
+  padding: 20px;
+  max-width: 80%;
+}
+
+.game-over-overlay {
+  text-align: center;
+  padding: 2rem;
+  max-width: 80%;
+  min-width: 400px;
+}
+
+.leaderboard-entry-overlay {
+  background-color: $overlay-background-more-visible;
+  text-align: center;
+  padding: 2rem;
+  max-width: 80%;
+}
+
+.round-win-overlay {
+  text-align: center;
+  padding: 2rem;
+  max-width: 80%;
+}
+
+.points-overlay {
+  position: fixed;
+  top: 6em;
+  left: calc(50% + 150px);
+  transform: none;
+}
+
+.timer-overlay {
+  position: fixed;
+  top: 6em;
+  left: calc(50% - 270px);
+  min-width: 6.063em;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .info-overlay, .game-mode-selection {
+    width: 100%;
+    max-width: none;
+  }
+
+  .clues-overlay, .game-over-overlay, .round-win-overlay {
+    width: 80%;
+    max-width: none;
+    min-width: initial; 
+  }
+
+  .flag-overlay {
+    top: 1em;
+  }
+
+  .points-overlay {
+    top: auto;
+    bottom: 20px;
+    left: auto;
+    right: 20px;
+  }
+
+  .timer-overlay {
+    top: auto;
+    bottom: 70px;
+    left: auto;
+    right: 20px;
+  }
+}

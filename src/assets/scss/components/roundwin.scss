@@ -1,0 +1,49 @@
+.round-win-country {
+  font-size: 1.5rem;
+}
+
+.score-calculation {
+  font-size: 1.2em;
+}
+
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.score-row .title,
+.score-row .points {
+  margin: 2px 0;
+}
+
+.score-row .points,
+.score-row .penalty-points {
+  text-align: right;
+  width: 110px;
+}
+
+.penalty-points {
+  color: $red;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid black;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+.total-row .title,
+.total-row .points {
+  margin: 5px 0;
+}
+
+.total-row .points {
+  text-align: right;
+}

@@ -1,0 +1,102 @@
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Lato, sans-serif, -apple-system, BlinkMacSystemFont;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $dark-gray;
+  }
+  
+li {
+  margin: 6px 0;
+}
+
+h1 {
+  font-family: RocherColor, Lato, sans-serif;
+  font-variation-settings: "BVEL" 70, "SHDW" 80;
+  font-weight: normal;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+
+h1.mapmaster {
+  font-size: 55px;
+}
+
+h1.round-win {
+  font-size: 45px;
+}
+
+.country-name {
+  margin-bottom: 1.3em;
+}
+
+.wanted-country-title {
+  margin-bottom: 5px;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.padding-sides-1 {
+  padding: 0 1em;
+}
+
+.rocher {
+  font-palette: --Mint;
+}
+
+.center {
+  text-align: center;
+}
+
+.padding-y {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.overlay-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.text {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.loading-indicator {
+  border: 4px solid $light-gray;
+  border-top: 4px solid $purple-medium;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+  overflow: hidden;
+}
