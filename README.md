@@ -11,6 +11,15 @@ MapMaster is an innovative game developed using React and TypeScript, offering a
 - **Engaging Gameplay**: MapMaster challenges players to guess the country of a displayed flag. Points are awarded for correct guesses, with a time limit to add excitement. Clues are available to assist, but they come at a points cost. The game demands quick thinking and sharp knowledge of world flags, offering a fun and educational experience. Whether you're a geography enthusiast or just looking for a fun challenge, MapMaster provides an engaging and interactive way to test your skills.
 - **Responsive Design**: MapMaster offers an optimized experience on both desktop and mobile devices. Its interface adjusts seamlessly to different screen sizes, ensuring enjoyable gameplay on any device.
 
+## APIs and Integrations
+
+MapMaster utilizes several APIs for its core functionalities:
+
+- **Google Maps API**: For map integration.
+- **Google Geocoding API**: To determine the country when clicking on the map.
+- **Restcountries.com API**: For fetching random flags and country information.
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -51,6 +60,16 @@ npm run dev
 ```
 
 This will start the game on a local server, usually at `http://localhost:3000`.
+
+## Environment Setup
+
+To run MapMaster locally, you need to set up the following environment variables in an `.env` file in the project root directory:
+
+```env
+VITE_REACT_APP_GOOGLE_MAPS_API_KEY='' # Your Google Maps API key
+VITE_REACT_APP_SUPABASE_KEY='' # Your Supabase key for high score integration
+VITE_REACT_APP_SUPABASE_URL='' # Your Supabase URL for high score integration
+```
 
 ## Contributing
 
