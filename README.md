@@ -19,6 +19,9 @@ MapMaster utilizes several APIs for its core functionalities:
 - **Google Geocoding API**: To determine the country when clicking on the map.
 - **Restcountries.com API**: For fetching random flags and country information.
 
+## Code Quality and Standards
+
+We keep things neat and tidy at MapMaster with ESLint and the Airbnb style guide. It's our little way of ensuring the code is not just good, but great! Easy to read, easy to follow – because everyone should enjoy diving into our code as much as they enjoy playing the game.
 
 ## Getting Started
 
