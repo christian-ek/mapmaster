@@ -1,7 +1,9 @@
 
 # MapMaster
 
-MapMaster is an innovative game developed using React and TypeScript, offering a unique gaming experience. This project includes all necessary files to set up and run the game.
+[Play MapMaster Now](https://map.christianek.io)
+
+MapMaster is an innovative game developed using React and TypeScript, offering a unique gaming experience. This project includes all necessary files to set up and run the game. Experience the challenge and excitement of identifying world flags right in your browser!
 
 ## Features
 
